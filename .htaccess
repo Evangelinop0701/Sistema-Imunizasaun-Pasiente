@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteRule ^index.html$ media.php [L]
+RewriteRule ^login.html$ login.php [L]
+
+RewriteRule ^estatistika.html$ media.php?page=estatistika&act=read [L]
+
+
+RewriteRule ^baranda.html$ media.php?page=baranda [L]
+RewriteRule ^informasaun.html$ media.php?page=informasaun&act=read [L]
+RewriteRule ^read-info-(.*)\.html$ media.php?page=informasaun&act=read_info&id=$1 [L]
+
+RewriteRule ^dados-pasiente.html$ media.php?page=dados&act=read_pasiente [L]
+RewriteRule ^detalho-pasiente-(.*)\.html$ media.php?page=dados&act=detalho_pasiente&id=$1 [L]
+RewriteRule ^tipo-vasinasaun.html$ media.php?page=dados&act=tipo [L]
+RewriteRule ^view-periodo-(.*)\.html$ media.php?page=dados&act=periodo&id=$1 [L]
+
+Options All -indexes

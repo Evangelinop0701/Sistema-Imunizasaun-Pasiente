@@ -1,0 +1,51 @@
+RewriteEngine On
+
+RewriteRule ^home.html$ media.php?module=home [L]
+
+RewriteRule ^dados-pasiente.html$ media.php?module=pasiente&act=read [L]
+RewriteRule ^input-pasiente.html$ media.php?module=pasiente&act=input [L]
+RewriteRule ^update-pasiente-(.*)\.html$ media.php?module=pasiente&act=update&id=$1 [L]
+RewriteRule ^detalo-pasiente-(.*)\.html$ media.php?module=pasiente&act=detalo&id=$1 [L]
+
+RewriteRule ^dados-doutor.html$ media.php?module=doutor&act=read [L]
+RewriteRule ^input-doutor.html$ media.php?module=doutor&act=input [L]
+RewriteRule ^update-doutor-(.*)\.html$ media.php?module=doutor&act=update&id=$1 [L]
+RewriteRule ^detalho-doutor-(.*)\.html$ media.php?module=doutor&act=detalho&id=$1 [L]
+
+RewriteRule ^dados-tipo.html$ media.php?module=tipo&act=read [L]
+RewriteRule ^input-tipo.html$ media.php?module=tipo&act=input [L]
+RewriteRule ^update-tipo-(.*)\.html$ media.php?module=tipo&act=update&id=$1 [L]
+RewriteRule ^import.html$ media.php?module=tipo&act=import [L]
+
+RewriteRule ^user.html$ media.php?module=user&act=read [L]
+RewriteRule ^input-user.html$ media.php?module=user&act=input [L]
+RewriteRule ^update-user-(.*)\.html$ media.php?module=user&act=update&id=$1 [L]
+RewriteRule ^update-pass-(.*)\.html$ media.php?module=user&act=update_pass&id=$1 [L]
+
+RewriteRule ^imunisasaun.html$ media.php?module=imunisasaun&act=read [L]
+RewriteRule ^input-imun-(.*)\.html$ media.php?module=imunisasaun&act=input&id=$1 [L]
+RewriteRule ^update-imun-(.*)\.html$ media.php?module=imunisasaun&act=update&id=$1 [L]
+
+RewriteRule ^kalendario.html$ media.php?module=imunisasaun&act=kalendario [L]
+RewriteRule ^detalho-kalender-(.*)\.html$ media.php?module=imunisasaun&act=dt_kalender&id=$1 [L]
+
+RewriteRule ^doses-(.*)\.html$ media.php?module=doses&act=read&id=$1 [L]
+RewriteRule ^input-doses-(.*)\.html$ media.php?module=doses&act=input&id=$1 [L]
+RewriteRule ^update-doses-(.*)\.html$ media.php?module=doses&act=update&id=$1 [L]
+
+RewriteRule ^info-control.html$ media.php?module=info&act=read [L]
+RewriteRule ^input-info.html$ media.php?module=info&act=input [L]
+RewriteRule ^update-info-(.*)\.html$ media.php?module=info&act=update&id=$1 [L]
+
+RewriteRule ^control-panel.html$ media.php?module=control&act=read [L]
+RewriteRule ^input-control.html$ media.php?module=control&act=input [L]
+RewriteRule ^update-control-(.*)\.html$ media.php?module=control&act=update&id=$1 [L]
+
+RewriteRule ^aldeia.html$ media.php?module=aldeia&act=read [L]
+RewriteRule ^input-aldeia.html$ media.php?module=aldeia&act=input [L]
+RewriteRule ^update-aldeia-(.*)\.html$ media.php?module=aldeia&act=update&id=$1 [L]
+
+RewriteRule ^periodo.html$ media.php?module=periodo&act=read [L]
+RewriteRule ^input-periodo.html$ media.php?module=periodo&act=input [L]
+
+Options All -indexes
